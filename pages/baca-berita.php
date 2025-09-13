@@ -105,7 +105,7 @@ $otherResult = $otherStmt->get_result();
       <h3>Berita Lainnya</h3>
       <div class="berita-saran-list">
         <?php while ($saran = $otherResult->fetch_assoc()): ?>
-          <a href="baca-berita.php?slug=<?= htmlspecialchars($saran['slug']) ?>" class="saran-item">
+          <a href="baca-berita?slug=<?= htmlspecialchars($saran['slug']) ?>" class="saran-item">
             <?php if (!empty($saran['gambar'])): ?>
               <img src="uploads/<?= htmlspecialchars($saran['gambar']) ?>" alt="<?= htmlspecialchars($saran['judul']) ?>">
             <?php endif; ?>
